@@ -26,9 +26,13 @@ header{
   border-radius: 50px;
   padding: 9px 20px;
 }
-.nav li a:hover, .nav li a:visited, .nav li a:active, .nav li a:focus{
-  border: white 1px solid;
+.nav li a:visited, .nav li a:active, .nav li a:focus{
+
   background-color: rgba(0, 0, 0, 0);
+}
+.nav li a:hover{
+  background-color: rgba(0, 0, 0, 0);
+  border: white 1px solid;
 }
 .logo{
   padding-top: 39px;
@@ -655,10 +659,13 @@ p {
     .six .col-sm-6 {
       margin-bottom: 60px;
     }
+    .circle {
+      display: none;
+    }
   }
   @media only screen and (max-width: 375px) {
     .circle {
-      left: 45%;
+     display: none;
     }
     .six .progress, .col-sm-4 p{
       display: none;

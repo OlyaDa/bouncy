@@ -228,7 +228,7 @@
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
         <ul class="menu">
             <li><a href="javascript:myShowImage('liAll')">All Works</a></li>
-            <li><a href="javascript:myShowImage('liPrint')" id="aPrint">Print</a></li>
+            <li><a href="javascript:myShowImage('liPrint')">Print</a></li>
             <li><a href="javascript:myShowImage('liIdentity')">Identity</a></li>
             <li><a href="javascript:myShowImage('liBranding')">Branding</a></li>
             <li><a href="javascript:myShowImage('liWeb')">Web</a></li>
@@ -239,7 +239,7 @@
         <div class="main">
             <div class="gamma-container gamma-loading" id="gamma-container">
                 <ul class="gamma-gallery" id="gamma-gallery">
-                    <li id="liAll">
+                    <li>
                         <div data-alt="imgAllWorks" data-description="<h3>All Works</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary1.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary1.png" data-min-width="1000"></div>
@@ -253,7 +253,7 @@
                             </noscript>
                         </div>
                     </li>
-                    <li id="liPrint">
+                    <li>
                         <div data-alt="imgPrint" data-description="<h3>Print</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary2.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary2.png" data-min-width="1000"></div>
@@ -267,7 +267,7 @@
                             </noscript>
                         </div>
                     </li>
-                    <li id="liIdentity">
+                    <li>
                         <div data-alt="imgIdentity" data-description="<h3>Identity</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary3.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary3.png" data-min-width="1000"></div>
@@ -281,7 +281,7 @@
                             </noscript>
                         </div>
                     </li>
-                    <li id="liBranding">
+                    <li>
                         <div data-alt="imgBranding" data-description="<h3>Branding</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary4.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary4.png" data-min-width="1000"></div>
@@ -295,7 +295,7 @@
                             </noscript>
                         </div>
                     </li>
-                    <li id="liWeb">
+                    <li>
                         <div data-alt="imgWeb" data-description="<h3>Web</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary6.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary6.png" data-min-width="1000"></div>
@@ -309,7 +309,7 @@
                             </noscript>
                         </div>
                     </li>
-                    <li id="liHTML">
+                    <li>
                         <div data-alt="imgHTML" data-description="<h3>HTML</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary7.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary7.png" data-min-width="1000"></div>
@@ -323,7 +323,7 @@
                             </noscript>
                         </div>
                     </li>
-                    <li id="liWordpress">
+                    <li>
                         <div data-alt="imgWordpress" data-description="<h3>Wordpress</h3>" data-max-width="1800" data-max-height="1350">
                             <div data-src="images/xxxlarge/gallary5.png" data-min-width="1300"></div>
                             <div data-src="images/xxlarge/gallary5.png" data-min-width="1000"></div>
@@ -503,23 +503,8 @@
                     columns : 2
                 } ]
             };
-            Gamma.init( GammaSettings, fncallback );
-            // Example how to add more items (just a dummy):
-            var page = 0,
-                items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
-            function fncallback() {
-                $( '#loadmore' ).show().on( 'click', function() {
-                    ++page;
-                    var newitems = items[page-1]
-                    if( page <= 1 ) {
+            Gamma.init( GammaSettings );
 
-                        Gamma.add( $( newitems ) );
-                    }
-                    if( page === 1 ) {
-                        $( this ).remove();
-                    }
-                } );
-            }
         });
     </script>
 </section>
