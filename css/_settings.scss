@@ -1,0 +1,21 @@
+//$prefixes: "-webkit-", "-o-", "-moz-", "-ms-";
+
+$general_font_text: 'Open Sans', sans-serif;
+$general_font_caption: 'Source Sans Pro', sans-serif;
+$main_color: #19bd9a;
+$caption_color: #333b46;
+$text_color: #81868e;
+$white_color: #fff;
+
+//@mixin caption ($general_font_caption, $font-size, $font-weight, $color, $letter-spacing, $margin-bottom) {
+//  font-family: $general_font_caption;
+//}
+
+//@mixin caption {
+//  font-family: $general_font_caption;
+//  font-size: 20px;
+//  font-weight: lighter;
+//  color: $caption_color;
+//  letter-spacing: 6px;
+//  margin-bottom: 42px;
+//}
