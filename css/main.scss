@@ -771,6 +771,7 @@ nav {
 /*-------------------------------PORTFOLIO-----------------------------*/
 
   .portfolio {
+    overflow: hidden;
     img:hover {
       opacity: 0.6;
       filter: alpha(opacity=60);

@@ -609,6 +609,7 @@ nav {
     display: none; } }
 /*-------------------------------PORTFOLIO-----------------------------*/
 .portfolio {
+  overflow: hidden;
   padding: 80px 0 100px 0;
   background-color: #f3f3f3; }
   .portfolio img:hover {
