@@ -991,6 +991,16 @@ nav {
     }
   }
 
+@media only screen and (max-width: 991px) {
+  .portfolio .nav-link:after {
+    margin: 0 auto auto;
+  }
+
+  .portfolio .nav-link {
+    margin-bottom: 14px;
+  }
+}
+
 /*-------------------------------THE TEAM-----------------------------*/
 
 .team {
@@ -1597,7 +1607,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
   .subscribe input {
     margin-bottom: 30px;
   }

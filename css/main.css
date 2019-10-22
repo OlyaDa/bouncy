@@ -757,6 +757,12 @@ nav {
       letter-spacing: 1px;
       font-weight: bold; }
 
+@media only screen and (max-width: 991px) {
+  .portfolio .nav-link:after {
+    margin: 0 auto auto; }
+
+  .portfolio .nav-link {
+    margin-bottom: 14px; } }
 /*-------------------------------THE TEAM-----------------------------*/
 .team {
   padding: 80px 0 100px 0; }
@@ -1161,7 +1167,7 @@ nav {
   .subscribe button:hover {
     background-color: #0b7760; }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
   .subscribe input {
     margin-bottom: 30px; } }
 @media only screen and (max-width: 480px) {
