@@ -725,7 +725,7 @@ nav {
   .portfolio ul {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px; }
+    margin-bottom: 46px; }
   .portfolio .project-start {
     background: url(../images/green-line-2.png), no-repeat, center;
     background-size: cover;
