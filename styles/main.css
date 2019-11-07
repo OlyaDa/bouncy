@@ -609,7 +609,6 @@ nav {
     display: none; } }
 /*-------------------------------PORTFOLIO-----------------------------*/
 .portfolio {
-  overflow: hidden;
   padding: 80px 0 100px 0;
   background-color: #f3f3f3; }
   .portfolio img:hover {
@@ -698,7 +697,8 @@ nav {
       display: block;
       height: 2px;
       width: 38px;
-      margin: 14px auto auto;
+      margin: auto;
+      margin-top: 14px;
       background-color: #f3f3f3; }
     .portfolio .nav-link:hover {
       text-decoration: none; }
@@ -725,7 +725,7 @@ nav {
   .portfolio ul {
     display: flex;
     justify-content: center;
-    margin-bottom: 46px; }
+    margin-bottom: 60px; }
   .portfolio .project-start {
     background: url(../images/green-line-2.png), no-repeat, center;
     background-size: cover;
@@ -757,12 +757,6 @@ nav {
       letter-spacing: 1px;
       font-weight: bold; }
 
-@media only screen and (max-width: 991px) {
-  .portfolio .nav-link:after {
-    margin: 0 auto auto; }
-
-  .portfolio .nav-link {
-    margin-bottom: 14px; } }
 /*-------------------------------THE TEAM-----------------------------*/
 .team {
   padding: 80px 0 100px 0; }
@@ -839,38 +833,18 @@ nav {
   .team .owl-dots button.active {
     background-color: #19bd9a; }
 
-@media only screen and (max-width: 767px) {
-  .team .team-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-  .team .title {
-    border-right: none;
-    padding-right: 0; }
-
-  .team .col-img {
-    display: flex;
-    justify-content: center; }
-
-  .team .team-card p {
-    text-align: center; }
-
-  .team .progress-card {
-    margin-right: 0px; } }
 @media only screen and (max-width: 576px) {
   .team .title {
     padding-right: 0; }
 
   .team .team-card {
     text-align: center; }
-
-  p {
-    text-align: center; }
+    .team .team-card p {
+      text-align: center; }
 
   .team .progress-card {
-    margin-right: 0; }
-
+    margin-right: 0; } }
+@media only screen and (max-width: 576px) {
   .team .progress-card {
     width: 300px; }
 
@@ -1167,8 +1141,8 @@ nav {
   .subscribe button:hover {
     background-color: #0b7760; }
 
-@media only screen and (max-width: 767px) {
-  .subscribe input {
+@media only screen and (max-width: 576px) {
+  .subscribe form > input {
     margin-bottom: 30px; } }
 @media only screen and (max-width: 480px) {
   .subscribe form > input {
