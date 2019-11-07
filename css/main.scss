@@ -771,6 +771,7 @@ nav {
 /*-------------------------------PORTFOLIO-----------------------------*/
 
   .portfolio {
+    overflow: hidden;
     img:hover {
       opacity: 0.6;
       filter: alpha(opacity=60);
@@ -898,8 +899,7 @@ nav {
         display: block;
         height: 2px;
         width: 38px;
-        margin: auto;
-        margin-top: 14px;
+        margin: 14px auto auto;
         background-color: #f3f3f3;
       }
 
@@ -947,7 +947,7 @@ nav {
     ul {
       display: flex;
       justify-content: center;
-      margin-bottom: 60px;
+      margin-bottom: 46px;
     }
 
     .project-start {
@@ -990,6 +990,16 @@ nav {
       }
     }
   }
+
+@media only screen and (max-width: 991px) {
+  .portfolio .nav-link:after {
+    margin: 0 auto auto;
+  }
+
+  .portfolio .nav-link {
+    margin-bottom: 14px;
+  }
+}
 
 /*-------------------------------THE TEAM-----------------------------*/
 
@@ -1109,45 +1119,66 @@ nav {
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .team .title {
-    padding-right: 0;
+@media only screen and (max-width: 767px) {
+  .team .team-card  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .team .team-card {
+.team .title {
+  border-right: none;
+  padding-right: 0;
+  }
+
+  .team .col-img {
+    display: flex;
+    justify-content: center;
+  }
+  .team .team-card p {
     text-align: center;
-
-    p {
-      text-align: center;
-    }
   }
-
   .team .progress-card {
-    margin-right: 0;
+    margin-right: 0px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .team  .progress-card {
-    width: 300px;
+.team .title {
+  padding-right: 0;
+}
+.team .team-card {
+  text-align: center;
+}
+
+  p {
+    text-align: center;
   }
-  .team .img {
-    width: 284px;
-    height: 365px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+
+.team .progress-card {
+  margin-right: 0;
+}
+
+.team  .progress-card {
+  width: 300px;
+}
+.team .img {
+  width: 284px;
+  height: 365px;
+  margin-right: auto;
+  margin-left: auto;
+}
 }
 
 @media only screen and (max-width: 480px) {
-  .team .team-card p {
-    margin-right: 0;
-  }
+.team .team-card p {
+  margin-right: 0;
+}
 }
 
 @media only screen and (max-width: 320px) {
-  .team  .progress-card {
-    width: 260px;
-  }
+.team  .progress-card {
+  width: 260px;
+}
 }
 
 /*-------------------------------LETS TALK-----------------------------*/
@@ -1576,8 +1607,8 @@ nav {
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .subscribe form > input {
+@media only screen and (max-width: 767px) {
+  .subscribe input {
     margin-bottom: 30px;
   }
 }
